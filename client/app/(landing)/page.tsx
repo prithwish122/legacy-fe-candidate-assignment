@@ -1,17 +1,16 @@
 "use client"
-
-import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
 import WhyChooseUs from "@/components/why-choose-us"
 import HowItWorks from "@/components/how-it-works"
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/background.png')" }}>
-      <Navbar />
+    <div className="min-h-screen">
       <HeroSection />
       <WhyChooseUs />
       <HowItWorks />
     </div>
   )
 }
+
+

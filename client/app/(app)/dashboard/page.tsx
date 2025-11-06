@@ -1,7 +1,7 @@
 "use client"
 import Navbar from "@/components/navbar"
 import MessageSigner from "@/components/message-signer"
-import DashboardCards from "@/components/dashboard-cards"
+// import DashboardCards from "@/components/dashboard-cards"
 
 export default function Dashboard() {
   return (
@@ -26,3 +26,5 @@ export default function Dashboard() {
     </div>
   )
 }
+
+
