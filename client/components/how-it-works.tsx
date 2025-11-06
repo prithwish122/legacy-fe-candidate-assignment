@@ -7,40 +7,39 @@ export default function HowItWorks() {
   const phases = [
     {
       id: "01",
-      title: "Unified Inbox Setup",
-      subtitle: "Multi-Channel Message Aggregation",
+      title: "Headless Authentication Setup – Dynamic.xyz Integration",
+      subtitle: "",
       description:
-        "Connect Twilio, WhatsApp, Email, and Social APIs to bring all your customer conversations into one central inbox. Simplify communication and reduce context-switching for your entire team.",
+        "Added Dynamic.xyz headless embedded wallet authentication flow (without widget) for a seamless login experience.",
       details: [
-        "Connect Twilio, WhatsApp, Email, and Social APIs",
-        "Aggregate messages into a unified contact thread",
-        "Enable search, filters, and channel badges",
+        "Added email → code verification using Dynamic Headless Email API for secure and smooth onboarding.",
+        "Added automatic wallet address retrieval and context management post-authentication.",
       ],
       icon: Inbox,
     },
     {
       id: "02",
-      title: "Team Collaboration & Automation",
-      subtitle: "Shared Notes, Mentions, and Scheduling",
+      title: "Message Signing & Verification Flow",
+      subtitle: "",
       description:
-        "Collaborate with teammates in real time using shared notes and @mentions. Schedule outreach messages and automate follow-ups directly from the unified dashboard.",
+        "Added message input and signing functionality on the frontend using ethers.js.",
       details: [
-        "Real-time collaboration with @mentions and shared notes",
-        "Schedule automated follow-ups and campaigns",
-        "Manage contacts and view complete message history",
+        "Added backend /verify-signature API in Node.js + Express to recover signer and validate the signature.",
+        "Added UI to display signature validity, signer address, and original message in real time.",
+        "Added local history for previously signed messages using React state and localStorage.",
       ],
       icon: Users,
     },
     {
       id: "03",
-      title: "Analytics & Insights",
-      subtitle: "Performance Tracking & Optimization",
+      title: "Security, Testing & CI Enhancements",
+      subtitle: "",
       description:
-        "Gain full visibility into communication performance with analytics dashboards. Track response times, channel volume, and engagement metrics to improve efficiency and conversions.",
+        "Added stricter request size limits, CSRF protection, and environment-based CORS policies for secure backend communication.",
       details: [
-        "Monitor response time and engagement metrics",
-        "Compare performance across channels",
-        "Export reports for performance reviews",
+        "Added frontend tests with Vitest + React Testing Library for form validation and signature flow verification.",
+        "Added structured logging and request IDs across backend for observability.",
+        "Added GitHub Actions CI pipeline to run linting and test suites automatically.",
       ],
       icon: BarChart,
     },
@@ -57,9 +56,9 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl text-white mb-6 tracking-tight">How It Works?</h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+          {/* <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
             Streamline every customer conversation with a unified, intelligent inbox
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Process Flow */}

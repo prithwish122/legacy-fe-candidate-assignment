@@ -20,10 +20,10 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <h3 className="text-left text-balance text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-white mb-3">
-              Unified Inbox
+              Wallet Authentication
             </h3>
             <p className="text-left text-sm md:text-base text-gray-400">
-              Bring all your messages—SMS, WhatsApp, Email, and Social DMs—into one clean, connected view.
+              Secure login with Dynamic.xyz Embedded Wallet.
             </p>
           </div>
         </div>
@@ -31,10 +31,10 @@ export default function WhyChooseUs() {
         <div className="col-span-1 min-h-[300px] rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 p-8 flex flex-col justify-end">
           <div className="max-w-xs">
             <h3 className="text-left text-balance text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-white mb-3">
-              Smart Outreach
+              Message Signing
             </h3>
             <p className="text-left text-sm md:text-base text-gray-400">
-              Send, reply, and schedule messages across channels effortlessly from a single dashboard.
+              Sign custom messages directly from your wallet.
             </p>
           </div>
         </div>
@@ -49,10 +49,10 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <h3 className="text-left text-balance text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-white mb-3">
-              Team Collaboration
+              Signature Verification
             </h3>
             <p className="text-left text-sm md:text-base text-gray-400">
-              Work together in real-time with shared notes, mentions, and live editing—no context switching.
+              Backend validates signatures using ethers.js or viem.
             </p>
           </div>
         </div>
@@ -71,10 +71,10 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <h3 className="text-left text-balance text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-white mb-3">
-              Contact Intelligence
+              Signing History
             </h3>
             <p className="text-left text-sm md:text-base text-gray-400">
-              View full message history, track engagement, and keep every customer interaction in one place.
+              View and manage all signed messages locally.
             </p>
           </div>
         </div>
@@ -89,10 +89,10 @@ export default function WhyChooseUs() {
               </div>
             </div>
             <h3 className="text-left text-balance text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-white mb-3">
-              Analytics & Insights
+              Scalable Architecture
             </h3>
             <p className="text-left text-sm md:text-base text-gray-400">
-              Monitor response times, channel performance, and team productivity with visual dashboards.
+              Built with React 18+ and Node.js for future expansion.
             </p>
           </div>
         </div>

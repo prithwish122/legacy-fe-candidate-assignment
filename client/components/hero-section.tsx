@@ -2,6 +2,7 @@
 
 import { ContainerScroll } from "@/components/ui/container-scroll-animation"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 export default function HeroSection() {
   const router = useRouter()
@@ -21,7 +22,10 @@ export default function HeroSection() {
 
               {/* CTA Button */}
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-8">
-                <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors">
+                <button
+                  onClick={() => router.push('/dashboard')}
+                  className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors cursor-pointer hover:cursor-pointer"
+                >
                   Try Demo 
                 </button>
               </div>
@@ -29,9 +33,15 @@ export default function HeroSection() {
           </>
         }
       >
-        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-600/20 to-black">
-          <div className="text-center text-white/50">
-            <p>Your Product Preview</p>
+        <div className="w-full h-full flex items-center justify-center">
+          <div className="relative w-full max-w-5xl h-[28rem] md:h-[34rem] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+            <Image
+              src="/image.png"
+              alt="Hero preview"
+              fill
+              priority
+              className="object-cover"
+            />
           </div>
         </div>
       </ContainerScroll>

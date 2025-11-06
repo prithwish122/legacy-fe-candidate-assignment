@@ -10,7 +10,9 @@ export default function LandingLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="min-h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/background.png')" }}>
-      <Navbar />
+      <div className="mb-4">
+        <Navbar />
+      </div>
       {children}
     </div>
   )

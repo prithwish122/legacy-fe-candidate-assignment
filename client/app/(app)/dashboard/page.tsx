@@ -17,10 +17,12 @@ export default function Dashboard() {
               <MessageSigner />
             </div>
 
-            {/* Right Column - Recent Signatures */}
-            <div className="flex flex-col gap-6">
-            <h2 className="text-white text-2xl lg:text-3xl font-bold">Recent signatures</h2>
-            <HistoryList />
+            {/* Right Column - Recent Signatures wrapped in glass container */}
+            <div className="flex flex-col gap-4">
+              <h2 className="text-white text-3xl lg:text-4xl font-bold">Recent signatures</h2>
+              <div className="rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 p-6 lg:p-8 shadow-xl">
+                <HistoryList />
+              </div>
             </div>
           </div>
         </div>

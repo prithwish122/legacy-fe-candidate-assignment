@@ -43,24 +43,22 @@ export default function HistoryList() {
 
   if (items.length === 0) {
     return (
-      <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-xl">
-        <h3 className="text-white font-semibold mb-2">Recent signatures</h3>
+      <div>
         <p className="text-gray-400 text-sm">No signatures yet.</p>
       </div>
     )
   }
 
   return (
-    <div className="mt-4">
-      <h3 className="text-white font-semibold mb-2">Recent signatures</h3>
+    <div className="mt-2">
       <div className="space-y-3">
         {items.map((h) => (
-          <div key={h.id} className="bg-white/5 border border-white/10 rounded-xl p-4">
-            <div className="text-xs text-gray-400 mb-1">{new Date(h.createdAt).toLocaleString()}</div>
-            <div className="text-sm text-gray-200 break-words mb-2">{h.message}</div>
-            <div className="text-xs text-gray-400 break-words mb-1">sig: {h.signature.slice(0, 20)}…{h.signature.slice(-12)}</div>
-            <div className="text-xs text-gray-400 break-words mb-1">signer: {h.signer || "Unknown"}</div>
-            <div className={`text-xs font-medium ${h.isValid ? 'text-green-300' : 'text-red-300'}`}>
+          <div key={h.id} className="bg-white/5 border border-white/10 rounded-xl p-5">
+            <div className="text-sm text-gray-400 mb-1">{new Date(h.createdAt).toLocaleString()}</div>
+            <div className="text-base text-gray-200 break-words mb-2">{h.message}</div>
+            <div className="text-sm text-gray-400 break-words mb-1">sig: {h.signature.slice(0, 20)}…{h.signature.slice(-12)}</div>
+            <div className="text-sm text-gray-400 break-words mb-1">signer: {h.signer || "Unknown"}</div>
+            <div className={`text-sm font-medium ${h.isValid ? 'text-green-300' : 'text-red-300'}`}>
               {h.isValid ? 'Valid' : 'Invalid'}
             </div>
           </div>
