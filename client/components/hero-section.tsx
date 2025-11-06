@@ -1,8 +1,10 @@
 "use client"
 
 import { ContainerScroll } from "@/components/ui/container-scroll-animation"
+import { useRouter } from "next/navigation"
 
 export default function HeroSection() {
+  const router = useRouter()
   return (
     <div className="flex flex-col -mt-8">
       <ContainerScroll
@@ -17,10 +19,10 @@ export default function HeroSection() {
                 Sign and verify your custom messages
               </p>
 
-              {/* Email Input and Button */}
+              {/* CTA Button */}
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-8">
                 <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors">
-                  Join The Waitlist
+                  Try Demo 
                 </button>
               </div>
             </div>
